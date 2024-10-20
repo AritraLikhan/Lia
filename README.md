@@ -1,7 +1,7 @@
 ## Contents
 | Lesson | Lesson name |
 | ------------- | ------------- |
-| 1 | [Linux git setup](https://github.com/AritraLikhan/Lia/README.md#Linux-git) |
+| 1 | [Linux git setup](https://github.com/AritraLikhan/Lia/blob/main/README.md#Linux-git) |
 
 ## Linux-git
 ### Installation process
