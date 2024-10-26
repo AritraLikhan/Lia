@@ -3,6 +3,8 @@
 | ------------- | ------------- |
 | 1 | [Linux git setup](https://github.com/AritraLikhan/Lia/blob/main/README.md#Linux-git) |
 | 2 | [Linux ls command](https://github.com/AritraLikhan/Lia/blob/main/README.md#Linux-ls-command) |
+| 3 | [Linux cd command](https://github.com/AritraLikhan/Lia/blob/main/README.md#Linux-cd-command) |
+
 
 
 ## Linux-git
@@ -70,7 +72,7 @@ Relative path:
 ```
 ls ../directory_name
 ```
-###Note: we can use simply 'ls directory_name' in the following cases:
+### Note: we can use simply 'ls directory_name' in the following cases:
 >If the directory 'directory_name' is under the current directory, for example, if our current directory is '/home/aritralikhan2001', we can run the following:
 ```
 ls Documents 
@@ -106,6 +108,28 @@ ls -d */
 >To see list of files only (current directory: /home/aritralikhan2001):
 ```
 ls -f */
+```
+## Linux-cd-command
+>To go to any directory:
+Absolute path:
+```
+cd path/to/directory_name
+```
+Relative path:
+```
+cd ../directory_name
+```
+>To navigate to parent directory:
+```
+cd ..
+```
+>To navigate to root directory:
+```
+cd 
+```
+>To navigate to a directory whose name has space(s) :
+```
+cd 'directory name'
 ```
 
 
