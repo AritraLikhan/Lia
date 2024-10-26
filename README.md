@@ -4,6 +4,8 @@
 | 1 | [Linux git setup](https://github.com/AritraLikhan/Lia/blob/main/README.md#Linux-git) |
 | 2 | [Linux ls command](https://github.com/AritraLikhan/Lia/blob/main/README.md#Linux-ls-command) |
 | 3 | [Linux cd command](https://github.com/AritraLikhan/Lia/blob/main/README.md#Linux-cd-command) |
+| 4 | [Linux file operations](https://github.com/AritraLikhan/Lia/blob/main/README.md#Linux-file-operations) |
+
 
 
 
@@ -131,8 +133,53 @@ cd
 ```
 cd 'directory name'
 ```
+## Linux-file-operations
+>To create a file and write a file:
+```
+cat > file01.txt #(enter)
+```
+```
+Coding is not boring, 
+```
+```
+But it takes a lot of patience; 
+```
+```
+```
+```
+So hard for a lazy guy like me :"( 
+```
+Then press ctrl+d to end terminal inputs
 
+>To see file contents: 
+```
+cat file01.txt
+```
+>To concatenate two files' contents and see them in the terminal (suppose we already have another text file file02.txt):
+```
+cat file02.txt file01.txt
+```
+>To concatenate two file contents and store it to a different file:
+```
+cat file01.txt file02.txt > file03.txt
+```
+>To append input from terminal to a file:
+```
+cat >> file01.txt
+```
+```
+One Piece is most popular in Japan
+```
+Then press ctrl+d to end terminal inputs
 
+>To append one file content to another : 
+```
+cat file02.txt >> file03.txt
+```
+>To concatenate multiple files and append to another file (assuming we already have file 'file04.txt'):
+```
+cat file01.txt file02.txt file03.txt >> file04.txt
+```
 
 
 
