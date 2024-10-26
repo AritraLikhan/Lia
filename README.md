@@ -4,7 +4,8 @@
 | 1 | [Linux git setup](https://github.com/AritraLikhan/Lia/blob/main/README.md#Linux-git) |
 | 2 | [Linux ls command](https://github.com/AritraLikhan/Lia/blob/main/README.md#Linux-ls-command) |
 | 3 | [Linux cd command](https://github.com/AritraLikhan/Lia/blob/main/README.md#Linux-cd-command) |
-| 4 | [Linux file operations](https://github.com/AritraLikhan/Lia/blob/main/README.md#Linux-file-operations) |
+| 4 | [Linux file operations(create,view,append with cat)](https://github.com/AritraLikhan/Lia/blob/main/README.md#Linux-file-operations) |
+| 5 | [Linux directory operations](https://github.com/AritraLikhan/Lia/blob/main/README.md#Linux-directory-operations) |
 
 
 
@@ -181,5 +182,18 @@ cat file02.txt >> file03.txt
 cat file01.txt file02.txt file03.txt >> file04.txt
 ```
 
+## Linux-directory-operations
+>To create directory (for example 'dir'):
+```
+mkdir dir 
+```
+>To create subdirectories inside an existing directory (for example 'subdir'):
+```
+mkdir dir/subdir 
+```
+>To directly create a directory hierarchy:
+```
+mkdir -p dir/{subdir01,subdir02} 
+```
 
 
