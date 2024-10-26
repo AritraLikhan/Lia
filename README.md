@@ -79,7 +79,34 @@ ls Documents
 ```
 ls /home 
 ```
-
+>To see the list one directory backward the current directory(Lia):
+```
+ls ..
+```
+>To see the list two directories backward the current directory(Lia):
+```
+ls ../..
+```
+>To see all the files and directories including the hidden ones (suppose .git file in current directory Lia):
+```
+ls -a
+```
+>To see the list of files of a specific type, say, we wanna see the list of html files under a directory (current directory: /home/aritralikhan2001):
+```
+ls Lia/*.html
+```
+>To save the list into a text file (current directory: /home/aritralikhan2001):
+```
+ls Lia > out01.txt
+```
+>To see list of directories only (current directory: /home/aritralikhan2001):
+```
+ls -d */
+```
+>To see list of files only (current directory: /home/aritralikhan2001):
+```
+ls -f */
+```
 
 
 
