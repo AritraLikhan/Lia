@@ -215,5 +215,34 @@ rm -r dir
 ```
 ### Note: '-r' flag stands for recursive, that means if we have a directory path like: 'dir/subdir01/subdir011' , 'rm -r dir' will delete like this: dir/subdir01/subdir011 -> dir/subdir01 -> dir -> all gone.
 
+>To copy files from current directory to any directory:
 
+### Case-1: From any directory to any directory:
+```
+find /home/aritralikhan2001/Lia -type d -name "subdir011" -exec cp Otto.txt Rem.html {} \;
+```
+Here, 
+-- find /home/aritralikhan2001/Lia -type d -name "subdir011" : finds the exact path for "subdir011" within the known path '/home/aritralikhan2001/Lia' (destination directory's exact path is unknown)
+-- cp Otto.txt Rem.html {} \ : copies the files Otto.txt, Rem.html
+-- -exec : executes the copy operation based on the path found
+
+### Case-2: From any directory to its ancestor directory:
+```
+cp Otto.txt Rem.html ../Documents
+```
+### Case-3: From any directory to a successor directory:
+Since one may reach the successor through a number of possible paths, it's impossible for the source directory to decide which path will exactly reach the successor, therefore, we have no specific way to do it. We can follow the solution for case-1 in this case. 
+
+>To copy one directory along with all its subdirectories and files to another directory: 
+```
+cp -r 'My list' dir/subdir01/subdir011
+```
+>To copy a file to its current directory with a different name: 
+```
+cp Otto.txt Subaru.txt
+```
+>To copy to another directory with a new name: 
+```
+cp -r 'My list'/list.txt dir/subdir01/subdir011/mylist.txt
+```
 
