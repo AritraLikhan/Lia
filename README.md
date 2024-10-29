@@ -195,5 +195,25 @@ mkdir dir/subdir
 ```
 mkdir -p dir/{subdir01,subdir02} 
 ```
+>To see the hierarchy of subdirectories and files within the current directory:
+```
+ls -R
+```
+>To remove only the top-level subdirectories if the following note's condition is satisfied (leaf nodes of the tree) (assuming 'dir/subdir01/{subdir011,subdir012}' path exists):
+```
+rmdir dir/subdir01/{subdir011,subdir012} 
+```
+>To delete the whole directory (assuming 'dir/subdir01/{subdir011,subdir012}' path exists):
+```
+rmdir -p dir/subdir01/{subdir011,subdir012} 
+```
+## Note: Don't try to delete the whole directory simply using "dir/subdir01/{subdir011,subdir012}" , it will prevent deletion if at least one of the subdirectories contain files/subdirectories not mentioned in the path
+
+>To delete everything within a directory (current directory 'Lia' contains 'dir'):
+```
+rm -r dir
+```
+## Note: '-r' flag stands for recursive, that means if we have a directory path like: 'dir/subdir01/subdir011' , 'rm -r dir' will delete like this: dir/subdir01/subdir011 -> dir/subdir01 -> dir -> all gone.
+
 
 
