@@ -245,4 +245,10 @@ cp Otto.txt Subaru.txt
 ```
 cp -r 'My list'/list.txt dir/subdir01/subdir011/mylist.txt
 ```
+>To copy all files of a specific type to a destination directory:
+```
+cp *.html dir/subdir01/subdir012
+```
+>> All move commands are similar to cp command so not being showed
+
 
