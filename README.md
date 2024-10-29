@@ -207,13 +207,13 @@ rmdir dir/subdir01/{subdir011,subdir012}
 ```
 rmdir -p dir/subdir01/{subdir011,subdir012} 
 ```
-## Note: Don't try to delete the whole directory simply using "dir/subdir01/{subdir011,subdir012}" , it will prevent deletion if at least one of the subdirectories contain files/subdirectories not mentioned in the path
+### Note: Don't try to delete the whole directory simply using "dir/subdir01/{subdir011,subdir012}" , it will prevent deletion if at least one of the subdirectories contain files/subdirectories not mentioned in the path
 
 >To delete everything within a directory (current directory 'Lia' contains 'dir'):
 ```
 rm -r dir
 ```
-## Note: '-r' flag stands for recursive, that means if we have a directory path like: 'dir/subdir01/subdir011' , 'rm -r dir' will delete like this: dir/subdir01/subdir011 -> dir/subdir01 -> dir -> all gone.
+### Note: '-r' flag stands for recursive, that means if we have a directory path like: 'dir/subdir01/subdir011' , 'rm -r dir' will delete like this: dir/subdir01/subdir011 -> dir/subdir01 -> dir -> all gone.
 
 
 
